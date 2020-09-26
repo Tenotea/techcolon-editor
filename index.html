@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico?e=vhrwwre" type="image/x-icon">
+  <link rel="stylesheet" href="editor.css">
+  <link rel="stylesheet" href="index.css">
+  <title> Drafts | Techcolon Editor - Standalone Version </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <header class="header">
+    <div class="site-name">
+      <a href="/">
+      <p class="name-site"> <span>TECH</span>COLON</p>
+      <p class="tiny-word-under-site-name animate__animated animate__tada"> Editor </p>
+      </a>
+    </div>
+
+    <nav class="navigation">
+        <ul class="nav closed-state wide-open animate__animated animate__faster">
+            <div class="site-name">
+              <a href="/">
+              <p class="name-site"> <span>TECH</span>COLON</p>
+              <p class="tiny-word-under-site-name animate__animated animate__tada"> Editor </p>
+              </a>
+              <i class="material-icons close-menu"> close </i>
+            </div>
+            <div class="links">
+                <a href="https://techcolon.net"> <li class="item"> Recent posts </li> </a>
+                <a href="https://techcolon.net/categories"> <li class="item"> Categories </li> </a>
+                <a href="https://techcolon.net/about"> <li class="item"> About </li> </a>
+                <a href="https://techcolon.net/contact"> <li class="item"> Contact  </li> </a>
+            </div>
+        </ul>
+    </nav>
+    <div class="menu">
+        <p> <i class="material-icons md-36"> menu </i> </p>
+    </div>
+  </header>
+
+  <div class="info">
+    <h1 class="animate__animated animate__lightSpeedInLeft"> <span id="number-of-docs" > 0 </span> Docs in Drafts </h1>
+    <div id="actions">
+      <a href="/editor.html" id="save-button"> <i class="material-icons"> create </i> Create New Document </a>
+      <button id="copy-button" class="sort-by-time"> <i class="material-icons"> sort </i> Sort By Time </button>
+      <button id="load-button" class="sort-a-to-z"> <i class="material-icons"> sort_by_alpha </i> A to Z </button>
+    </div>
+  </div>
+
+  <main class="container"></main>
+  <script src="nav.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="editor.css">
+  <link rel="shortcut icon" href="favicon.ico?e=vhrwwre" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title> Editor | Techcolon Editor - Standalone Version </title>
+</head>
+<body>
+  <header class="header">
+    <div class="site-name">
+      <a href="/">
+      <p class="name-site"> <span>TECH</span>COLON</p>
+      <p class="tiny-word-under-site-name animate__animated animate__tada"> Editor </p>
+      </a>
+    </div>
+
+    <nav class="navigation">
+        <ul class="nav closed-state wide-open animate__animated animate__faster">
+            <i class="material-icons close-menu"> close </i>
+            <div class="links">
+                <a href="https://techcolon.net"> <li class="item"> Recent posts </li> </a>
+                <a href="https://techcolon.net/categories"> <li class="item"> Categories </li> </a>
+                <a href="https://techcolon.net/about"> <li class="item"> About </li> </a>
+                <a href="https://techcolon.net/contact"> <li class="item"> Contact  </li> </a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="menu">
+        <p> <i class="material-icons md-36"> menu </i> </p>
+    </div>
+</header>
+
+  <main id="container">
+    <div id="editor">
+      <textarea name="blog-content" id="blog-content" placeholder="Write blog post ..."></textarea>
+    </div>
+    <a href="#" id="documentation-link"> Need Help? Read the Docs </a>
+
+    <div id="actions">
+      <button id="preview-button"> Preview Blog Post </button>
+      <button id="save-button"> Save to drafts </button>
+      <a href="/" id="load-button"> Load from drafts </a>
+      <button id="copy-button"> Copy to clipboard </button>
+    </div>
+
+    <div id="preview-box">
+      <div id="preview-header"> <h1 class="title"> Untitled </h1> <p id="close-icon">&times;</p> </div>
+      <div id="preview"></div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+  <script src="formatter.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

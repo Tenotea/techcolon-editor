@@ -1,0 +1,161 @@
+.header{
+  position: fixed;
+}
+
+body{
+  background: #031024;
+}
+
+.info{
+  top: 70px;
+  position: relative;
+  width: 100%;
+  background-color: rgb(1, 27, 70);
+  min-height: 250px;
+  height: fit-content;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.info h1{
+  padding-left: 5%;
+  padding-top: 50px;
+  font-size: 3em;
+  color: white;
+  font-family: 'Noto Serif';
+  margin-bottom: 30px;
+}
+
+.info h1 #number-of-docs{
+  font-size: inherit;
+  font-family: inherit;
+  padding-left: 20px;
+  border-left: 5px solid rgb(156, 0, 65);
+}
+
+.info #actions{
+  margin: auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
+#save-button, #copy-button, #load-button{
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: flex-start;
+}
+
+i.material-icons{
+  font-size: 1.2em;
+  padding-right: 10px;
+}
+
+.info i.material-icons, .last-modified i.material-icons{
+  padding-right: 10px;
+}
+
+.info #copy-button{
+  background: rgb(1, 103, 199);
+}
+
+#save-button{
+  background:rgb(0, 189, 101);
+  flex-grow: 5;
+}
+
+.actions #save-button, .actions #copy-button{
+  margin-left: 0px;
+}
+
+.actions #save-button{
+  flex-grow: 1;
+  display: flex;
+}
+
+.actions #copy-button{
+  background: rgba(63, 0, 21, 0.281);
+  transition: 200ms background ease-out;
+}
+
+.actions #copy-button:hover{
+  background: rgb(212, 0, 71);
+}
+
+#load-button{
+  background: rgb(255, 131, 48);
+}
+
+
+.container{
+  position: relative;
+  top: 80px;
+  width: 100%;
+  min-height: 400px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.container .card{
+  width: 100%;
+  min-height: 100px;
+  background: rgb(0, 27, 68);
+  border-radius: 5px;
+  margin: 30px 0px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  transition: 200ms ease-in-out box-shadow;
+  border-left: 5px solid rgb(179, 0, 89);
+}
+
+.container .card:hover{
+  box-shadow: 0px 1px 40px #000000bb;
+}
+
+.container .card .details{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* min-width: 200px; */
+  margin-right: 20px;
+  height: fit-content;
+}
+
+.container .card .details .title {
+  font-size: 1.7em;
+}
+
+.container .card .details .last-modified{
+  margin: 15px 0px;
+  font-size: inherit;
+  background-color: rgb(38, 58, 87);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.container .card .actions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .no-drafts-message {
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff48;
+}
