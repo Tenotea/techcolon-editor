@@ -113,7 +113,7 @@ function fetchDrafts(sort) {
           timeString = `${timePassedInDays}d ${hoursPassedAfterDay}h`
 
           if(timePassedInDays > 7){
-            let timePassedInWeeks = Math.floor(timePassedInWeeks/7)
+            let timePassedInWeeks = Math.floor(timePassedInDays/7)
             let daysPassedAfterWeek = timePassedInDays - (timePassedInWeeks * 7)
             timeString = `${timePassedInWeeks}w ${daysPassedAfterWeek}d`
 
