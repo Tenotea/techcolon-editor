@@ -347,13 +347,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
   display: flex;
   background: #004781;
   color: white;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 10px 20px;
   margin: auto;
   border-bottom: 0px solid gainsboro;
   height: 52px;
@@ -361,6 +361,7 @@ body {
 }
 
 #preview-header .title {
+  font-family: 'Open Sans', sans-serif;
   flex-grow: 1;
   font-size: 1.4em;
   line-wrap: no-wrap;
