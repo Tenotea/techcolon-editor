@@ -167,15 +167,15 @@ body {
 
 @media screen and (max-width: 1140px) {
   .header .site-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .header .site-name .tiny-word-under-site-name {
-    font-size: .8em;
+    font-size: .6em;
   }
 
   .header {
-    padding: 0px 15px;
+    padding: 0px 25px;
   }
 
   .header .navigation .nav {
@@ -345,7 +345,9 @@ body {
 
 #preview-header {
   position: fixed;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  top: 0;
+  left: 0;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
   display: flex;
   background: #004781;
   color: white;
@@ -354,18 +356,19 @@ body {
   padding: 10px 0px;
   margin: auto;
   border-bottom: 0px solid gainsboro;
-  padding: 0px 20px;
+  height: 52px;
+  width: 100%;
 }
 
 #preview-header .title {
   flex-grow: 1;
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-wrap: no-wrap;
   text-overflow: ellipsis;
 }
 
 #close-icon {
-  font-size: 2.7em;
+  font-size: 2.5em;
   color: white;
   cursor: pointer;
   margin-top: -10px;
