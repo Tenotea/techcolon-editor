@@ -325,7 +325,7 @@ body {
 }
 
 #preview-box {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -368,6 +368,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-right: 20px;
 }
 
 #close-icon {
