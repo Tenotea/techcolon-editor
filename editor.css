@@ -331,6 +331,8 @@ body {
   width: 100%;
   /* max-width: 1200px; */
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
   background-color: #ffffff;
   box-shadow: 0px 0px 30px #0000003f;
   border-radius: 0px;
@@ -340,7 +342,7 @@ body {
 
 #preview-box.active {
   display: block;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
 #preview-header {
@@ -375,7 +377,6 @@ body {
   font-size: 2.5em;
   color: white;
   cursor: pointer;
-  margin-top: -10px;
 }
 
 #preview {
