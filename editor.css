@@ -342,7 +342,7 @@ body {
 
 #preview-box.active {
   display: block;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 #preview-header {
@@ -384,7 +384,7 @@ body {
   line-height: 2em;
   max-width: 1200px;
   margin: 0px auto;
-  padding: 0px 20px;
+  padding: 0px 30px;
   padding-bottom: 60px;
 }
 
