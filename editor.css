@@ -57,7 +57,7 @@ body {
 
 .header {
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -344,22 +344,24 @@ body {
 
 #preview-header {
   display: flex;
+  background: #004781;
+  color: white;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: auto;
   margin-bottom: 30px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 0px solid gainsboro;
   max-width: 1200px;
 }
 
 #preview-header .title {
   flex-grow: 1;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 #close-icon {
-  font-size: 2.5em;
+  font-size: 2.7em;
   color: rgb(56, 56, 56);
   cursor: pointer;
   margin-top: -10px;
