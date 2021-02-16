@@ -342,7 +342,7 @@ body {
 
 #preview-box.active {
   display: block;
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 #preview-header {
@@ -365,7 +365,7 @@ body {
 #preview-header .title {
   font-family: 'Open Sans', sans-serif;
   flex-grow: 1;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
