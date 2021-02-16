@@ -364,7 +364,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   flex-grow: 1;
   font-size: 1.4em;
-  line-wrap: no-wrap;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
