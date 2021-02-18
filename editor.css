@@ -398,9 +398,9 @@ body {
 #preview h4,
 #preview h5,
 #preview h6 {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 5px;
-  font-family: 'Noto Serif';
+  font-family: 'Open Sans';
 }
 
 #preview h1 {
