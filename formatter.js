@@ -4,6 +4,7 @@ const blogContent = document.getElementById('blog-content')
 const blogPreviewBox = document.getElementById('preview')
 let draftTitle = document.querySelector('#preview-header .title')
 let copyButton = document.querySelector('#copy-button')
+let htmlCopy = ''
 
 function createMatchBetweenRegex (symbol) {
  let exp = new RegExp(`${symbol}(.*?)${symbol}`, 'g')
@@ -178,6 +179,7 @@ function applyFormat(){
           previewContent = blogPreviewBox.innerHTML.replace(textPattern, constructHTML(currentOperator, null, linkAddress))
         }
         blogPreviewBox.innerHTML = previewContent
+        htmlCopy = previewContent
       }
     }
   })
@@ -265,13 +267,13 @@ function copy(){
 
 copyButton.addEventListener('click', () => {
   render()
-  copyButton.setAttribute('data-clipboard-text', blogContent.value)
+  copyButton.setAttribute('data-clipboard-text', htmlCopy)
   copy()
 })
 
 copyButton.addEventListener('dblclick', () => {
   render()
-  copyButton.setAttribute('data-clipboard-target', previewBox.innerHTML)
+  copyButton.setAttribute('data-clipboard-target', htmlCopy)
   copy()
 })
 
